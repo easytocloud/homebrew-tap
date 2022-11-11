@@ -1,8 +1,5 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class Cloud9Tools < Formula
-  desc "AWS Tools for use in Cloud9"
+class AWSProfileOrganizer < Formula
+  desc "AWS Profile Organizer"
   homepage "http://easytocloud.com"
   license "MIT"
   head "https://github.com/easytocloud/cloud9-tools.git"
@@ -23,7 +20,7 @@ class Cloud9Tools < Formula
     #
     # This test will fail and we won't accept that! For Homebrew/homebrew-core
     # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test cloud9-tools`. Options passed
+    # software. Run the test with `brew test AWSProfileOrganizer`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
     #
     # The installed folder is not in the path, so use the entire path to any
