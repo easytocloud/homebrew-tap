@@ -1,8 +1,10 @@
-class AWSProfileOrganizer < Formula
+class Awsprofileorganizer < Formula
   desc "AWS Profile Organizer"
   homepage "http://easytocloud.com"
   license "MIT"
-  head "https://github.com/easytocloud/cloud9-tools.git"
+  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/brew.zip"
+  sha256 "d87345035cd55b9540ba0290cde66c5bb7d381a025ec9e9ac7718d454d75884c"
+  version '0.0.1'
 
   depends_on "awscli" => :build
 
@@ -10,9 +12,9 @@ class AWSProfileOrganizer < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    # system "./configure", *std_configure_args, "--disable-silent-rules"
+    system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    system echo Well done
+    system "make", "install"
   end
 
   test do
