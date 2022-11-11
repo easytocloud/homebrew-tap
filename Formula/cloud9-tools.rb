@@ -2,19 +2,20 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Cloud9Tools < Formula
-  desc ""
-  homepage ""
-  license ""
+  desc "AWS Tools for use in Cloud9"
+  homepage "http://easytocloud.com"
+  license "MIT"
   head "https://github.com/easytocloud/cloud9-tools.git"
 
-  # depends_on "cmake" => :build
+  depends_on "awscli" => :build
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
+    # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system echo Well done
   end
 
   test do
