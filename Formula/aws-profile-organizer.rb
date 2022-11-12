@@ -3,6 +3,7 @@ class AwsProfileOrganizer < Formula
   homepage "https://github.com/easytocloud/aws-profile-organizer.git"
   license "MIT"
   url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.1.1.zip"
+  sha256 "9becd5c7559710c3ce8df7f078996420beae89d57b4341cf80ccf771ba8d2cdc"
   version '0.1.1'
 
   def install
