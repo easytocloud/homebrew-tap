@@ -2,9 +2,9 @@ class AwsProfileOrganizer < Formula
   desc "AWS Profile Organizer"
   homepage "https://github.com/easytocloud/aws-profile-organizer.git"
   license "MIT"
-  sha256 "a1007cf04641f382090d3ffec33c6002877d40fc9fe1357f267def7fdfd9d889"
-  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.1.2.zip"
-  version '0.1.2'
+  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.1.2-fix.zip"
+  sha256 "b030b0b77fcf9f4a5c5b29d106e5363483cdacbb8eb9b59e2d810f5ba59b5265"
+  version '0.1.2-fix'
 
   def install
 
@@ -17,7 +17,6 @@ class AwsProfileOrganizer < Formula
     zsh_function.install "distribution/functions/_error"
     zsh_function.install "distribution/functions/_debug"
     zsh_function.install "distribution/functions/_die"
-    zsh_function.install "distribution/functions/_list_profiles"
   end
 
   test do
