@@ -24,3 +24,5 @@ You can now install the different formulae, starting with
 | [for-tools](https://github.com/easytocloud/for-tools.git)                         | AWS for-tools to iterate over multiple accounts/roles/profiles/user | `brew install for-tools`             |
 | [privpage](https://github.com/easytocloud/privpage.git)                           | AWS Privacy Pager                                                   | `brew install privpage`              |
 <!-- project_table_end -->
+
+Enjoy!
