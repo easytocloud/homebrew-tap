@@ -17,5 +17,10 @@ You can now install the different formulae, starting with
 # Formulae
 
 <!-- project_table_start -->
-TABLE HERE
+| Project                                                                           | Description                                                         | Install                              |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------ |
+| [akskrotate](https://github.com/easytocloud/akskrotate)                           | Rotate your aws access key / secret key with confidence             | `brew install akskrotate`            |
+| [aws-profile-organizer](https://github.com/easytocloud/aws-profile-organizer.git) | AWS Profile Organizer                                               | `brew install aws-profile-organizer` |
+| [for-tools](https://github.com/easytocloud/for-tools.git)                         | AWS for-tools to iterate over multiple accounts/roles/profiles/user | `brew install for-tools`             |
+| [privpage](https://github.com/easytocloud/privpage.git)                           | AWS Privacy Pager                                                   | `brew install privpage`              |
 <!-- project_table_end -->
