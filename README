@@ -18,4 +18,4 @@ You can now install the different formulae, starting with
 
 <!-- project_table_start -->
 TABLE HERE
-<!--project_table_end -->
+<!-- project_table_end -->
