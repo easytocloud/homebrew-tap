@@ -5,18 +5,17 @@
 class Akskrotate < Formula
   desc "Rotate your aws access key / secret key with confidence"
   homepage "https://github.com/easytocloud/akskrotate"
-  url "https://github.com/easytocloud/akskrotate/archive/v0.1.1.tar.gz"
-  sha256 "a8155e8703e92c8e257bba8007849627b2c7b8b67472ffa42a95265939973065"
+  url "https://github.com/easytocloud/akskrotate/archive/v0.1.2.tar.gz"
+  sha256 "ebd2cc6c48f6db5e77796d325846698d41415ae96f3d96d72ab96c4a3fd83cb3"
   license "MIT"
 
   depends_on "bash" => :build
-  depends_on "gcc"
 
   def install
     bin.install "distribution/bin/akskrotate" => "akskrotate"
   end
 
   test do
-    assert_match("123", "123")
+    assert_match("Please set AWS_PROFILE before calling akskrotate", shell_output("akskrotate 2>&1", 1))
   end
 end
