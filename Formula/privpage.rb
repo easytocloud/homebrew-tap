@@ -5,17 +5,14 @@
 class Privpage < Formula
   desc "Aws pager masking privacy sensitive information"
   homepage "https://github.com/easytocloud/privpage"
-  url "https://github.com/easytocloud/privpage/archive/v0.2.0.tar.gz"
-  sha256 "1d536767d0c82be39a5c52a2627396ce60c2f5ebf321d415f529058229a0f6d7"
+  url "https://github.com/easytocloud/privpage/archive/v0.2.1.tar.gz"
+  sha256 "316a32f42cc38b2464e0a6c85d30fafccb13e2b0fe6d977499ba65f0c7e41775"
   license "MIT"
 
   depends_on "bash" => :build
 
   def install
-    bin.install "distribution/bin/privpage" => "privpage"
-  end
-
-  test do
-    assert_match("Please set AWS_PROFILE before calling akskrotate", shell_output("akskrotate 2>&1", 1))
+    bin.install "distribution/bin/privpage"
+bin.install "distribution/bin/whoami"
   end
 end
