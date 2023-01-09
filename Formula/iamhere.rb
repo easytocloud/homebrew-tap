@@ -5,8 +5,8 @@
 class Iamhere < Formula
   desc "Tag-based change security group to allow traffic from your current ip address"
   homepage "https://github.com/easytocloud/iamhere"
-  url "https://github.com/easytocloud/iamhere/archive/v0.1.3.tar.gz"
-  sha256 "a633dd70ae31847ff6cf0013bf00aafb7c64cbc6c8c793a2681b7dd38812b0c4"
+  url "https://github.com/easytocloud/iamhere/archive/v0.1.4.tar.gz"
+  sha256 "c302549def204b8aabc2cb1f1316facecae664685477218f9be1df85e941cd7a"
   license "MIT"
 
   depends_on "bash" => :build
