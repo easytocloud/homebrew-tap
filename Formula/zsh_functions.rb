@@ -5,8 +5,8 @@
 class ZshFunctions < Formula
   desc "Common zsh functions"
   homepage "https://github.com/easytocloud/zsh_functions"
-  url "https://github.com/easytocloud/zsh_functions/archive/v0.1.2.tar.gz"
-  sha256 "aaaa33b2acff1c4389666aa9e549f956e6d019ec8777550346e4ed2c5dac0ae7"
+  url "https://github.com/easytocloud/zsh_functions/archive/v0.1.3.tar.gz"
+  sha256 "997858fad30662e4f4feca1f80317c57d353ce2463d6d562f45e8bf8262ceaf7"
   license "MIT"
 
   depends_on "bash" => :build
