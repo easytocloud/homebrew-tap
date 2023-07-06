@@ -25,6 +25,7 @@ You can now install the different formulae, starting with
 | [for-tools](https://github.com/easytocloud/for-tools)                                     | Aws cli tools to iterate over multiple profiles, roles, users or aws organizatio | `brew install for-tools`                   |
 | [iamhere](https://github.com/easytocloud/iamhere)                                         | Tag-based change security group to allow traffic from your current ip address    | `brew install iamhere`                     |
 | [privpage](https://github.com/easytocloud/privpage)                                       | Aws pager masking privacy sensitive information                                  | `brew install privpage`                    |
+| [zsh-functions](https://github.com/easytocloud/zsh_functions)                             | Common zsh functions                                                             | `brew install zsh-functions`               |
 <!-- project_table_end -->
 
 Enjoy!
