@@ -5,8 +5,8 @@
 class AwsProfileOrganizer < Formula
   desc "Organize your aws profile"
   homepage "https://github.com/easytocloud/aws-profile-organizer"
-  url "https://github.com/easytocloud/aws-profile-organizer/archive/v0.3.2.tar.gz"
-  sha256 "72c786165e0f54d99df4d1d233fb6cf17f6edb3565bc4c6accede0241df6254c"
+  url "https://github.com/easytocloud/aws-profile-organizer/archive/v0.3.3.tar.gz"
+  sha256 "eadb44a33a762cb80a3845249bc4ca8490f732b28b2ecd4bc654a2a49855b510"
   license "MIT"
 
   depends_on "bash" => :build
@@ -25,7 +25,7 @@ zsh_function.install "distribution/functions/_error"
 zsh_function.install "distribution/functions/_debug"
 zsh_function.install "distribution/functions/_die"
 
-systen "pwd"
+system "pwd"
 system "./postinstall"
   end
 end
