@@ -5,18 +5,16 @@
 class ZshFunctions < Formula
   desc "Common zsh functions"
   homepage "https://github.com/easytocloud/zsh_functions"
-  url "https://github.com/easytocloud/zsh_functions/archive/v0.1.8.tar.gz"
-  sha256 "53e356e7159a81a185b4fbe88d1f37a1bd73638f5f278ea35b14f55da901329e"
+  url "https://github.com/easytocloud/zsh_functions/archive/v0.2.0.tar.gz"
+  sha256 "415b8a5c4a7eb2953860985c186a196c4651d1fa83b39a401d8b9d8f0e22e28d"
   license "MIT"
 
   depends_on "bash" => :build
 
   def install
-    zsh_function.install "distribution/functions/_log"
-zsh_function.install "distribution/functions/_error"
-zsh_function.install "distribution/functions/_debug"
-zsh_function.install "distribution/functions/_die"
-
-system "./postinstall"
+    zsh_function.install "distribution/functions/_ezlog"
+zsh_function.install "distribution/functions/_ezerror"
+zsh_function.install "distribution/functions/_ezdebug"
+zsh_function.install "distribution/functions/_ezdie"
   end
 end
