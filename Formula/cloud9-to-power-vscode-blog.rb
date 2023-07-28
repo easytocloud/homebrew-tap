@@ -5,8 +5,8 @@
 class Cloud9ToPowerVscodeBlog < Formula
   desc "Artifacts used in the blog post use aws cloud9 to power your visual studio code"
   homepage "https://github.com/easytocloud/cloud9-to-power-vscode-blog"
-  url "https://github.com/easytocloud/cloud9-to-power-vscode-blog/archive/v0.1.5.tar.gz"
-  sha256 "d8502fb0ff58a066f12066ee4cf633419c267665be3057ec6b364df319ae487e"
+  url "https://github.com/easytocloud/cloud9-to-power-vscode-blog/archive/v0.1.6.tar.gz"
+  sha256 "3dadd56dc1e3f579c6cac38b7f0d9494127a764d1777fa107a8a77b51492dbaf"
   license "MIT-0"
 
   depends_on "bash" => :build
