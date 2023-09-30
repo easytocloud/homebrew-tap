@@ -5,14 +5,15 @@
 class Cloud9ToPowerVscodeBlog < Formula
   desc "Artifacts used in the blog post use aws cloud9 to power your visual studio code"
   homepage "https://github.com/easytocloud/cloud9-to-power-vscode-blog"
-  url "https://github.com/easytocloud/cloud9-to-power-vscode-blog/archive/v0.3.1.tar.gz"
-  sha256 "c5350889ca277b61ef97af57284d86dd83bee9182d468c26b450dae8e77f3fda"
+  url "https://github.com/easytocloud/cloud9-to-power-vscode-blog/archive/v0.4.0.tar.gz"
+  sha256 "73507423897cefaa555a39ae30b4369d416cee571fa4ba325cefe6989af883cb"
   license "MIT-0"
 
   depends_on "bash" => :build
 
   def install
     bin.install "distribution/bin/aws-proxy.sh"
+bin.install "distribution/bin/cloud9-proxy.sh"
 bin.install "distribution/bin/cloud9-mod.json"
   end
 end
