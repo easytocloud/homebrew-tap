@@ -5,8 +5,8 @@
 class Cloudx < Formula
   desc "Tools to convert an amazon linux instance to a vscode backend"
   homepage "https://github.com/easytocloud/cloudX"
-  url "https://github.com/easytocloud/cloudX/archive/v0.1.1.tar.gz"
-  sha256 "08ddb810e73fe412992cc8574760cfc0f6bb67b0c50a52d290308184c371d0fc"
+  url "https://github.com/easytocloud/cloudX/archive/v0.1.2.tar.gz"
+  sha256 "15e1d9bfc96e57c0e13e0d3d33598b6b065fc2f1884c2e55c7dd16d7e4670e40"
   license "MIT"
 
   def install
