@@ -5,13 +5,13 @@
 class SsoTools < Formula
   desc "Sso tools for use in aws ec2 instances"
   homepage "https://github.com/easytocloud/sso-tools"
-  url "https://github.com/easytocloud/sso-tools/archive/v0.1.2.tar.gz"
-  sha256 "99c934a4f271b7fee29a9d6b9ae5b9f8bb96e072220cf6d2cbfafdcf13f4b468"
+  url "https://github.com/easytocloud/sso-tools/archive/v0.1.3.tar.gz"
+  sha256 "36bf7ce0ddc7aad1c7043e49391c869436d6dce5a4bb6de231cfe52561ef7f1e"
 
   def install
     bin.install "distribution/bin/ssostart"
 bin.install "distribution/bin/cclist"
 bin.install "distribution/bin/ccclone"
-bin.install "distribution/bin/generate-config"
+bin.install "distribution/bin/generate-sso-config"
   end
 end
