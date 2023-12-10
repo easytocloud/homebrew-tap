@@ -5,8 +5,8 @@
 class ForTools < Formula
   desc "Aws cli tools to iterate over multiple profiles, roles, users or aws organizatio"
   homepage "https://github.com/easytocloud/for-tools"
-  url "https://github.com/easytocloud/for-tools/archive/v0.2.4.tar.gz"
-  sha256 "d8c7ca76b656d96980ccc43561a6734c20dd6f02a272f462598809deb42376b1"
+  url "https://github.com/easytocloud/for-tools/archive/refs/tags/v0.2.7.tar.gz"
+  sha256 "0887bf1b2c27f53e5aa7123f217b47c8f2683ca91111c7fc5b6de4768ea832a3"
   license "MIT"
 
   depends_on "bash" => :build
