@@ -5,8 +5,10 @@
 class SsoTools < Formula
   desc "Sso tools for use in aws ec2 instances"
   homepage "https://github.com/easytocloud/sso-tools"
-  url "https://github.com/easytocloud/sso-tools/archive/refs/tags/V0.1.8.tar.gz"
-  sha256 "a755f769614607e399ffaeb5eeaf0c91ae6f1026be7261ce6b398e9a538d6fca"
+  url "https://github.com/easytocloud/sso-tools/archive/refs/tags/v0.1.8.tar.gz"
+  sha256 "d01833dbef3b59a2b723eb9fc9b2612f82d37ae82a938cbd317e9e6902b5e45e"
+
+  depends_on "easytocloud/aws-utils"
 
   def install
     bin.install "distribution/bin/ssostart"
