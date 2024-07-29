@@ -13,5 +13,6 @@ class AwsUtils < Formula
     bin.install "distribution/bin/ccclone"
 bin.install "distribution/bin/cclist"
 bin.install "distribution/bin/ccinit"
+bin.install "distribution/bin/release"
   end
 end
