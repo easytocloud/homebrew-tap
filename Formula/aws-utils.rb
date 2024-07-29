@@ -10,10 +10,8 @@ class AwsUtils < Formula
   license "MIT"
 
   def install
-    bin.install "distribution/bin/akskrotate"
-bin.install "distribution/bin/ccclone"
+    bin.install "distribution/bin/ccclone"
 bin.install "distribution/bin/cclist"
 bin.install "distribution/bin/ccinit"
-bin.install "distribution/bin/privpage"
   end
 end
