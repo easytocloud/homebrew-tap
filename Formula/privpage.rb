@@ -5,11 +5,9 @@
 class Privpage < Formula
   desc "Aws pager masking privacy sensitive information"
   homepage "https://github.com/easytocloud/privpage"
-  url "https://github.com/easytocloud/privpage/archive/v0.2.3.tar.gz"
+  url "https://github.com/easytocloud/privpage/archive/refs/tags/v0.2.3.tar.gz"
   sha256 "0c21e61542e10c6e393c23666f066d8b671c5d7ed91f280ec752b91eccc4c389"
   license "MIT"
-
-  depends_on "bash" => :build
 
   def install
     bin.install "distribution/bin/privpage"
