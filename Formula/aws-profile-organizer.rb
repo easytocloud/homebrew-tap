@@ -5,11 +5,10 @@
 class AwsProfileOrganizer < Formula
   desc "Organize your aws profile"
   homepage "https://github.com/easytocloud/aws-profile-organizer"
-  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.3.10.tar.gz"
-  sha256 "e7e1f6d887756ee7f319a4d67f388228092fd62b6cd1e52360872d568f55f8a2"
+  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.3.11.tar.gz"
+  sha256 "390888316c05c3fe96c07e35a264fd92313618dad5316c330e622f4c7de71473"
   license "MIT"
 
-  depends_on "bash" => :build
   depends_on "easytocloud/tap/zsh_functions"
 
   def install
