@@ -5,8 +5,8 @@
 class SsoTools < Formula
   desc "Sso tools for use in aws ec2 instances"
   homepage "https://github.com/easytocloud/sso-tools"
-  url "https://github.com/easytocloud/sso-tools/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "9154238bf3d36b3e1e8ba8a9bf6df6ebeee971fab242f94b3359070b1bc33cac"
+  url "https://github.com/easytocloud/sso-tools/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "cae404125c816fb275172f027b0980915d2cf569f3ad7273c55a111a173bf307"
 
   depends_on "easytocloud/tap/aws-utils"
 
