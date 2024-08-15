@@ -5,8 +5,8 @@
 class Privpage < Formula
   desc "Aws pager masking privacy sensitive information"
   homepage "https://github.com/easytocloud/privpage"
-  url "https://github.com/easytocloud/privpage/archive/refs/tags/v0.2.4.tar.gz"
-  sha256 "77019487f8723ffe1105cb5c925301b8a9f50e7e2d6d595ed6ad9b80432bf96d"
+  url "https://github.com/easytocloud/privpage/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "857e50710502adbe8204be571ab985503617d373d8b66d73ff301b3a12432f05"
   license "MIT"
 
   def install
