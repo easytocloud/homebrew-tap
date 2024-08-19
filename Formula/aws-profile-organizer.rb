@@ -16,11 +16,7 @@ class AwsProfileOrganizer < Formula
 bin.install "distribution/bin/aws-profile-organizer-rc"
 bin.install "distribution/bin/aws-profile-organizer-set-defaults"
 
-zsh_function.install "distribution/functions/awsenv"
-zsh_function.install "distribution/functions/awsprofile"
-zsh_function.install "distribution/functions/awsmfa"
-
-prefix.install Dir["distribution/functions/*"]
+zsh_function.install Dir["distribution/functions/*"]
 bash_completion.install "completions/aws-profile-organizer-completion.bash"
 zsh_completion.install "completions/aws-profile-organizer-completion.zsh"
 
@@ -28,12 +24,12 @@ zsh_completion.install "completions/aws-profile-organizer-completion.zsh"
 (bin/"aws-profile-organizer").write <<~EOS
   #!/bin/bash
   if [ -n "$BASH_VERSION" ]; then
-    source "#{prefix}/awsenv"
-    source "#{prefix}/awsprofile"
+    source "#{zsh_function}/awsenv"
+    source "#{zsh_function}/awsprofile"
     source "#{bash_completion}/aws-profile-organizer-completion.bash"
   elif [ -n "$ZSH_VERSION" ]; then
-    source "#{prefix}/awsenv"
-    source "#{prefix}/awsprofile"
+    source "#{zsh_function}/awsenv"
+    source "#{zsh_function}/awsprofile"
     source "#{zsh_completion}/aws-profile-organizer-completion.zsh"
   else
     echo "Unsupported shell. Please use Bash or Zsh."
