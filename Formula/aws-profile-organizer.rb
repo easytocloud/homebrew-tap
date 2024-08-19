@@ -5,8 +5,8 @@
 class AwsProfileOrganizer < Formula
   desc "Organize your aws profile"
   homepage "https://github.com/easytocloud/aws-profile-organizer"
-  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.4.8.tar.gz"
-  sha256 "74450a4932daf65700982ca9d4c9bd786d6a9652a7a25e9ca6613ba092ddd8a0"
+  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.4.9.tar.gz"
+  sha256 "65648c25cef5d1519f9cfe961473fe4e53b8f00320757f70c2b4d077ac24bfe8"
   license "MIT"
 
   depends_on "easytocloud/tap/zsh_functions"
@@ -32,8 +32,8 @@ zsh_completion.install "completions/aws-profile-organizer-completion.zsh"
     echo "Seting up aws-profile-organizer for Zsh"
     source "#{zsh_function}/awsenv"
     source "#{zsh_function}/awsprofile"
-    source "#{zsh_completion}/aws-profile-organizer-completion.zsh"
     autoload -U compinit && compinit
+    source "#{zsh_completion}/aws-profile-organizer-completion.zsh"
   else
     echo "Unsupported shell. Please use Bash or Zsh."
   fi
