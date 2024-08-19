@@ -5,8 +5,8 @@
 class AwsProfileOrganizer < Formula
   desc "Organize your aws profile"
   homepage "https://github.com/easytocloud/aws-profile-organizer"
-  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "f42e359a83dc4954a05b395808cb9b3154b18888f6245feff4d8fc94baf2d639"
+  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "4acf528426d1e2f9f1f0f973d73672f3534b785027562367b51811040e668483"
   license "MIT"
 
   depends_on "easytocloud/tap/zsh_functions"
@@ -20,7 +20,31 @@ zsh_function.install "distribution/functions/awsenv"
 zsh_function.install "distribution/functions/awsprofile"
 zsh_function.install "distribution/functions/awsmfa"
 
+prefix.install Dir["distribution/functions/*"]
 bash_completion.install "completions/aws-profile-organizer-completion.bash"
 zsh_completion.install "completions/aws-profile-organizer-completion.zsh"
+
+# Create a wrapper script to source the functions and completions
+(bin/"aws-profile-organizer").write <<~EOS
+  #!/bin/bash
+  if [ -n "$BASH_VERSION" ]; then
+    source "#{prefix}/awsenv"
+    source "#{prefix}/awsprofile"
+    source "#{bash_completion}/aws-profile-organizer-completion.bash"
+  elif [ -n "$ZSH_VERSION" ]; then
+    source "#{prefix}/awsenv"
+    source "#{prefix}/awsprofile"
+    source "#{zsh_completion}/aws-profile-organizer-completion.zsh"
+  else
+    echo "Unsupported shell. Please use Bash or Zsh."
+  fi
+EOS
+
+chmod 0755, bin/"aws-profile-organizer"
+  end
+
+  test do
+    assert_match "Usage: awsenv", shell_output("bash -c 'source #{bin}/aws-profile-organizer && awsenv --help'")
+assert_match "Usage: awsprofile", shell_output("bash -c 'source #{bin}/aws-profile-organizer && awsprofile --help'")
   end
 end
