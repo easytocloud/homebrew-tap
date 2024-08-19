@@ -5,8 +5,8 @@
 class AwsProfileOrganizer < Formula
   desc "Organize your aws profile"
   homepage "https://github.com/easytocloud/aws-profile-organizer"
-  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.4.6.tar.gz"
-  sha256 "f17b62cfd3716ec9ab8680d43e0c0b5f8738938f59c1f3e6948f168c9e2880b0"
+  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.4.7.tar.gz"
+  sha256 "9cb0dd1db05b6726ee05596b31f8277a859c6f4074b62393790c14ba93fcb1c3"
   license "MIT"
 
   depends_on "easytocloud/tap/zsh_functions"
@@ -24,10 +24,12 @@ zsh_completion.install "completions/aws-profile-organizer-completion.zsh"
 (bin/"aws-profile-organizer").write <<~EOS
   #!/bin/bash
   if [ -n "$BASH_VERSION" ]; then
+    echo "Seting up aws-profile-organizer for Bash"
     source "#{zsh_function}/awsenv"
     source "#{zsh_function}/awsprofile"
     source "#{bash_completion}/aws-profile-organizer-completion.bash"
   elif [ -n "$ZSH_VERSION" ]; then
+    echo "Seting up aws-profile-organizer for Zsh"
     source "#{zsh_function}/awsenv"
     source "#{zsh_function}/awsprofile"
     source "#{zsh_completion}/aws-profile-organizer-completion.zsh"
