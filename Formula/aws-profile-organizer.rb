@@ -5,8 +5,8 @@
 class AwsProfileOrganizer < Formula
   desc "Organize your aws profile"
   homepage "https://github.com/easytocloud/aws-profile-organizer"
-  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.3.11.tar.gz"
-  sha256 "390888316c05c3fe96c07e35a264fd92313618dad5316c330e622f4c7de71473"
+  url "https://github.com/easytocloud/aws-profile-organizer/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "f42e359a83dc4954a05b395808cb9b3154b18888f6245feff4d8fc94baf2d639"
   license "MIT"
 
   depends_on "easytocloud/tap/zsh_functions"
@@ -19,5 +19,8 @@ bin.install "distribution/bin/aws-profile-organizer-set-defaults"
 zsh_function.install "distribution/functions/awsenv"
 zsh_function.install "distribution/functions/awsprofile"
 zsh_function.install "distribution/functions/awsmfa"
+
+bash_completion.install "completions/aws-profile-organizer-completion.bash"
+zsh_completion.install "completions/aws-profile-organizer-completion.zsh"
   end
 end
