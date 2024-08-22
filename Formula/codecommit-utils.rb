@@ -5,8 +5,8 @@
 class CodecommitUtils < Formula
   desc "Collection of command-line utilities to simplify working with aws codecommit r"
   homepage "https://github.com/easytocloud/codecommit-utils"
-  url "https://github.com/easytocloud/codecommit-utils/archive/refs/tags/v0.6.4.tar.gz"
-  sha256 "518230d69d96788baa9b39458f39e36ddc88f886f89d3ff63a9b890b37fa2752"
+  url "https://github.com/easytocloud/codecommit-utils/archive/refs/tags/v0.6.5.tar.gz"
+  sha256 "86c44a7933a4f51646bc4cee03c339791624a76f465d9247f856029e274ceb78"
   license "MIT"
 
   def install
