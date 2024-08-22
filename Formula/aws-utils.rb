@@ -5,13 +5,15 @@
 class AwsUtils < Formula
   desc "Aws utilities"
   homepage "https://github.com/easytocloud/aws-utils"
-  url "https://github.com/easytocloud/aws-utils/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "f797aa020d434f866121c0665cfa265159f6511dfda938b1957f405581adb238"
+  url "https://github.com/easytocloud/aws-utils/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "39787feb981ddbccb25638038c19ed0070e96320694d033b450198b562f815f7"
   license "MIT"
 
   def install
     bin.install "distribution/bin/ccclone"
 bin.install "distribution/bin/cclist"
 bin.install "distribution/bin/ccinit"
+bash_completion.install "distribution/completions/ccclone-completion.bash"
+zsh_completion.install "distribution/completions/ccclone-completion.zsh"
   end
 end
