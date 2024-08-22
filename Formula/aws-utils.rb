@@ -5,8 +5,8 @@
 class AwsUtils < Formula
   desc "Aws utilities"
   homepage "https://github.com/easytocloud/aws-utils"
-  url "https://github.com/easytocloud/aws-utils/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "39787feb981ddbccb25638038c19ed0070e96320694d033b450198b562f815f7"
+  url "https://github.com/easytocloud/aws-utils/archive/refs/tags/v0.6.1.tar.gz"
+  sha256 "1f37878c47c3f865eec1809e698ef1e6a454dff5d30855103ca07a8be90addb0"
   license "MIT"
 
   def install
