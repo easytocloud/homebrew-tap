@@ -5,8 +5,8 @@
 class CodecommitUtils < Formula
   desc "Collection of command-line utilities to simplify working with aws codecommit r"
   homepage "https://github.com/easytocloud/codecommit-utils"
-  url "https://github.com/easytocloud/codecommit-utils/archive/refs/tags/v0.6.5.tar.gz"
-  sha256 "86c44a7933a4f51646bc4cee03c339791624a76f465d9247f856029e274ceb78"
+  url "https://github.com/easytocloud/codecommit-utils/archive/refs/tags/v0.6.6.tar.gz"
+  sha256 "6ccada234642fce2275c4d1bcadcc256e5b584349b28f02baffc208a9fa757ac"
   license "MIT"
 
   def install
@@ -14,6 +14,8 @@ class CodecommitUtils < Formula
 bin.install "distribution/bin/cclist"
 bin.install "distribution/bin/ccinit"
 bash_completion.install "distribution/completions/ccclone-completion.bash"
+bash_completion.install "distribution/completions/cclist-completion.bash"
 zsh_completion.install "distribution/completions/_ccclone"
+zsh_completion.install "distribution/completions/_cclist"
   end
 end
