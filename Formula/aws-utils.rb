@@ -5,8 +5,8 @@
 class AwsUtils < Formula
   desc "Collection of aws cli utilities by easytocloud"
   homepage "https://github.com/easytocloud/aws-utils"
-  url "https://github.com/easytocloud/aws-utils/archive/refs/tags/v0.9.0.tar.gz"
-  sha256 "0cfbde96280efc3d1d8a87409ee7f6a29f828d54cb46a7e6d7ed38f7479350c2"
+  url "https://github.com/easytocloud/aws-utils/archive/refs/tags/v0.10.3.tar.gz"
+  sha256 "a0377c0d3129b991a5ff2d99ef718ca3a96f44aa152133dca137870ef3438501"
 
   depends_on "easytocloud/tap/akskrotate"
   depends_on "easytocloud/tap/aws-profile-organizer"
