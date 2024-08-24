@@ -8,12 +8,12 @@ class AwsUtils < Formula
   url "https://github.com/easytocloud/aws-utils/archive/refs/tags/v0.9.0.tar.gz"
   sha256 "0cfbde96280efc3d1d8a87409ee7f6a29f828d54cb46a7e6d7ed38f7479350c2"
 
-  depends_on easytocloud/tap/akskrotate
-  depends_on easytocloud/tap/aws-profile-organizer
-  depends_on easytocloud/tap/codecommit-utils
-  depends_on easytocloud/tap/for-tools
-  depends_on easytocloud/tap/iamhere
-  depends_on easytocloud/tap/sso-tools
+  depends_on "easytocloud/tap/akskrotate"
+  depends_on "easytocloud/tap/aws-profile-organizer"
+  depends_on "easytocloud/tap/codecommit-utils"
+  depends_on "easytocloud/tap/for-tools"
+  depends_on "easytocloud/tap/iamhere"
+  depends_on "easytocloud/tap/sso-tools"
 
   def install
     bin.install "distribution/bin/aws-utils"
