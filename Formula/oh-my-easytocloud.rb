@@ -5,8 +5,8 @@
 class OhMyEasytocloud < Formula
   desc "Upgrade oh-my-zsh agnoster theme with aws_env in prompt"
   homepage "https://github.com/easytocloud/oh-my-easytocloud"
-  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "5f5164c7827295d25bf59ea7cb4a055c5db0d356e74d3c1c018b55db50ecb31f"
+  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "ca517202fba0e32dd28b4b51e6d335845eb5ee5ff2a4e04c181c568b05580db1"
   license "MIT"
 
   def install
@@ -19,9 +19,5 @@ cp_r "plugins/easytocloud/.", plugin_dir
 theme_dir = File.expand_path("~/.oh-my-zsh/custom/themes")
 mkdir_p theme_dir
 cp "themes/easytocloud.zsh-theme", theme_dir
-  end
-
-  test do
-    assert_match("Please set AWS_PROFILE before calling akskrotate", shell_output("unset AWS_PROFILE ; akskrotate 2>&1", 1))
   end
 end
