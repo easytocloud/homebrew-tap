@@ -5,12 +5,12 @@
 class OhMyEasytocloud < Formula
   desc "Upgrade oh-my-zsh agnoster theme with aws_env in prompt"
   homepage "https://github.com/easytocloud/oh-my-easytocloud"
-  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.7.tar.gz"
-  sha256 "863cb3e3ebc60fe5f772667ecfbfe6ee8fdbb7a76cd5b3a0de26fbc2a38716f6"
+  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.8.tar.gz"
+  sha256 "60ecdc90938e2cd15fd232100735f16edbb2185f53aee0b8d86e7a18063d3338"
   license "MIT"
 
   def install
-    install.bin "themes/easytocloud.zsh-theme"
+    bin.install "themes/easytocloud.zsh-theme" => "ezkabouter"
 
 # Install the plugin directory to ~/.oh-my-zsh/custom/plugins
 plugin_dir = File.expand_path("~/.oh-my-zsh/custom/plugins/easytocloud")
