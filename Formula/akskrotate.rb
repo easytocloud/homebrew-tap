@@ -5,8 +5,8 @@
 class Akskrotate < Formula
   desc "Rotate your aws access key / secret key with confidence"
   homepage "https://github.com/easytocloud/akskrotate"
-  url "https://github.com/easytocloud/akskrotate/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "13f159a1ae470c3c031899ebf3ddb55d898ef72e94b2072d4d11435526d374e5"
+  url "https://github.com/easytocloud/akskrotate/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "9670837f916bc69c4dec075e4ce235c33bd65e4b1d3fd8ca09c9ac3cffa09116"
   license "MIT"
 
   def install
