@@ -5,8 +5,8 @@
 class CaUvx < Formula
   desc "Codeartifact wrapper for uvx/uv - seamlessly use aws codeartifact as a python pa"
   homepage "https://github.com/easytocloud/ca-uvx"
-  url "https://github.com/easytocloud/ca-uvx/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "250b214d8e2e6356d27e572ca68f1fd04a090fb9d4807b86675f277c93dfacf5"
+  url "https://github.com/easytocloud/ca-uvx/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "cddce6acf7122559363e45c4a43707ae3c74fce2e89812bd6634dcec90c3105b"
   license "MIT"
 
   def install
