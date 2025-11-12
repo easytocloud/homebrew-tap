@@ -5,8 +5,8 @@
 class LayoutUv < Formula
   desc "Direnv layout extension"
   homepage "https://github.com/easytocloud/layout_uv"
-  url "https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.2.1.tar.gz"
-  sha256 "f1c28f1993b27a117dc89cfe5a138c448c6e6e321b22d2d3c87d08d4c184e9fc"
+  url "https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "825ad728be4da677ad78acb311da19c45b16d7d9366b41a07ca2592c7977391c"
   license "MIT"
 
   def install
