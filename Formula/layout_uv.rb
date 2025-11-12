@@ -5,18 +5,13 @@
 class LayoutUv < Formula
   desc "Direnv layout extension"
   homepage "https://github.com/easytocloud/layout_uv"
-  url "https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "2faf071e39c4dc92098b3ebd13a6ac352e0700ebeca2b014fc72256a2a8404a4"
+  url "https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "73c0664c4940db764300b5b61bdd65260c95e9765c0c747ab22bbc80e71a9c5c"
   license "MIT"
 
   def install
     pkgshare.install "distribution/lib/layout_uv.sh"
 bin.install "distribution/bin/install-layout-uv"
-
-direnv_lib = "#{Dir.home}/.config/direnv/lib"
-FileUtils.mkdir_p(direnv_lib)
-FileUtils.cp("#{pkgshare}/layout_uv.sh", "#{direnv_lib}/layout_uv.sh")
-ohai "✓ layout_uv function installed to #{direnv_lib}/layout_uv.sh"
   end
 
   test do
