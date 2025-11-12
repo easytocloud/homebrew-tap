@@ -1,11 +1,11 @@
 Waiting for release tarball to be available...
-URL: https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.1.2.tar.gz
-SHA256: 97413b5981f474e12e554133b96f39f99368aad8e53583331e42f5207f1e338b
+URL: https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.1.3.tar.gz
+SHA256: e575af33b8ab69eec3c6d76a4d5a37e50feab537136b5231c4a44fc8b6e64c0e
 class LayoutUv < Formula
   desc "Direnv layout function for uv Python environments"
   homepage "https://github.com/easytocloud/layout_uv"
-  url "https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.1.2.tar.gz"
-  sha256 "97413b5981f474e12e554133b96f39f99368aad8e53583331e42f5207f1e338b"
+  url "https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.1.3.tar.gz"
+  sha256 "e575af33b8ab69eec3c6d76a4d5a37e50feab537136b5231c4a44fc8b6e64c0e"
   license "MIT"
 
   def install
