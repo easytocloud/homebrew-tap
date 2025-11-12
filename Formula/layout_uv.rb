@@ -1,8 +1,8 @@
 class LayoutUv < Formula
   desc "Direnv layout function for uv Python environments"
   homepage "https://github.com/easytocloud/layout_uv"
-  url "https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.1.4.tar.gz"
-  sha256 "923fbd79b4764b18d8010b94f6e4327a1f8be996c88fff41551837011a176881"
+  url "https://github.com/easytocloud/layout_uv/archive/refs/tags/v1.1.5.tar.gz"
+  sha256 "bc5481d3313d449c71898cc99706142369c26feea6d55c1b295df6ca2ceeaa68"
   license "MIT"
 
   def install
@@ -12,10 +12,20 @@ class LayoutUv < Formula
 
   def post_install
     # Automatically install the direnv function to user's config
+    return if ENV["HOMEBREW_SANDBOX"]
+
     direnv_lib = "#{Dir.home}/.config/direnv/lib"
-    FileUtils.mkdir_p(direnv_lib)
-    FileUtils.cp("#{pkgshare}/layout_uv.sh", "#{direnv_lib}/layout_uv.sh")
-    ohai "✓ layout_uv function installed to #{direnv_lib}/layout_uv.sh"
+    target_file = "#{direnv_lib}/layout_uv.sh"
+    source_file = "#{pkgshare}/layout_uv.sh"
+
+    begin
+      FileUtils.mkdir_p(direnv_lib)
+      FileUtils.cp(source_file, target_file)
+      ohai "✓ layout_uv function installed to #{target_file}"
+    rescue => e
+      opoo "Could not auto-install layout_uv function: #{e.message}"
+      opoo "Run 'install-layout-uv' manually to complete installation"
+    end
   end
 
   test do
