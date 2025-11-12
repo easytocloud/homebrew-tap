@@ -5,11 +5,9 @@
 class CodeartifactUv < Formula
   desc "Automatically update uv config to use codeartifact"
   homepage "https://github.com/easytocloud/codeartifact-uv"
-  url "https://github.com/easytocloud/codeartifact-uv/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "6934b35221ac00e5a412862d0d47f26a2f0f46484e01dbbeae8bf0625f03a415"
+  url "https://github.com/easytocloud/codeartifact-uv/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "6df48eaf191fd4fc4c5cf8a5642e1c81035242ea141080bab02059a6f4286d7b"
   license "MIT"
-
-  depends_on depends_on "fswatch"
 
   def install
     bin.install "distribution/bin/sync-pip-to-uv"
