@@ -5,8 +5,8 @@
 class CodeartifactUv < Formula
   desc "Automatically update uv config to use codeartifact"
   homepage "https://github.com/easytocloud/codeartifact-uv"
-  url "https://github.com/easytocloud/codeartifact-uv/archive/refs/tags/v1.0.9.tar.gz"
-  sha256 "ab1709531e05280f49bb526669abbb9c80d756ad4b85faf9804e900378a1218d"
+  url "https://github.com/easytocloud/codeartifact-uv/archive/refs/tags/v1.0.10.tar.gz"
+  sha256 "a5655aa3589bd263e8f38e15c19b80bb14677e2f5c998e4ef423eb7f18734db5"
   license "MIT"
 
   def install
