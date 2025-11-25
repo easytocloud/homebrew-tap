@@ -5,24 +5,18 @@
 class OhMyEasytocloud < Formula
   desc "Upgrade oh-my-zsh agnoster theme with aws_env in prompt"
   homepage "https://github.com/easytocloud/oh-my-easytocloud"
-  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.16.tar.gz"
-  sha256 "49594d90a0b9ffbfe0fd8a267ca29e8bc5577f79465e8a82500d9aba2849dfe9"
+  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.17.tar.gz"
+  sha256 "06bf3e5781b908425700c863ea14618658e6107c8dc2ddf2f71ebda000a0f5ed"
   license "MIT"
 
   def install
-    ohmyzsh = "~/.oh-my-zsh"
-
-system "mkdir", "-p", ohmyzsh + "/custom/plugins/easytocloud"
-system "cp", "-R", "plugins/easytocloud/.", ohmyzsh + "/custom/plugins/easytocloud/"
-
-system "mkdir", "-p", ohmyzsh + "/custom/themes"
-system "cp", "themes/easytocloud.zsh-theme", ohmyzsh + "/custom/themes/"
-
+    (share/"oh-my-easytocloud/plugins/easytocloud").install Dir["plugins/easytocloud/*"]
+(share/"oh-my-easytocloud/themes").install "themes/easytocloud.zsh-theme"
 (share/"doc/oh-my-easytocloud").install "README.md"
   end
 
   test do
-    system "test", "-f", ENV["HOME"] + "/.oh-my-zsh/custom/plugins/easytocloud/easytocloud.plugin.zsh"
-system "test", "-f", ENV["HOME"] + "/.oh-my-zsh/custom/themes/easytocloud.zsh-theme"
+    system "test", "-d", share/"oh-my-easytocloud/plugins/easytocloud"
+system "test", "-f", share/"oh-my-easytocloud/themes/easytocloud.zsh-theme"
   end
 end
