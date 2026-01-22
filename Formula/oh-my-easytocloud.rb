@@ -4,8 +4,8 @@
 class OhMyEasytocloud < Formula
   desc "Upgrade oh-my-zsh agnoster theme with aws_env in prompt"
   homepage "https://github.com/easytocloud/oh-my-easytocloud"
-  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.21.tar.gz"
-  sha256 "9935a7c616dd7271e5efc3b789e8aa46cd0c7972c4f361674f777960971ad0f2"
+  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "9a4bba99bcc0226ec981f599699dfca6245c31a3d64add50b5bdec9323007cc5"
   license "MIT"
 
   def install
@@ -17,14 +17,21 @@ class OhMyEasytocloud < Formula
 
   def post_install
     # post_install runs outside sandbox, so HOME is the real home directory
-    ohmyzsh = ENV["HOME"] + "/.oh-my-zsh"
-    return unless Dir.exist?(ohmyzsh)
+    ohmyzsh = Pathname(ENV["HOME"]) / ".oh-my-zsh"
+    return unless ohmyzsh.exist?
 
-    system "mkdir", "-p", ohmyzsh + "/custom/plugins/easytocloud"
-    system "cp", "-R", (share/"oh-my-easytocloud/plugins/easytocloud").to_s + "/.", ohmyzsh + "/custom/plugins/easytocloud/"
+    # Install plugin
+    plugin_dir = ohmyzsh / "custom/plugins/easytocloud"
+    rm_rf plugin_dir
+    plugin_dir.mkpath
+    cp_r (share/"oh-my-easytocloud/plugins/easytocloud").children, plugin_dir
 
-    system "mkdir", "-p", ohmyzsh + "/custom/themes"
-    system "cp", (share/"oh-my-easytocloud/themes/easytocloud.zsh-theme").to_s, ohmyzsh + "/custom/themes/"
+    # Install theme  
+    theme_dir = ohmyzsh / "custom/themes"
+    theme_dir.mkpath
+    theme_file = theme_dir / "easytocloud.zsh-theme"
+    rm_f theme_file
+    cp share/"oh-my-easytocloud/themes/easytocloud.zsh-theme", theme_file
   end
 
   def caveats
