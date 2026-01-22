@@ -4,8 +4,8 @@
 class OhMyEasytocloud < Formula
   desc "Upgrade oh-my-zsh agnoster theme with aws_env in prompt"
   homepage "https://github.com/easytocloud/oh-my-easytocloud"
-  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.20.tar.gz"
-  sha256 "38d670826e78f063f33a01e3929cbafab0b2f2c6d2388eb7157fb13fea71db02"
+  url "https://github.com/easytocloud/oh-my-easytocloud/archive/refs/tags/v0.2.21.tar.gz"
+  sha256 "9935a7c616dd7271e5efc3b789e8aa46cd0c7972c4f361674f777960971ad0f2"
   license "MIT"
 
   def install
