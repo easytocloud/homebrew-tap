@@ -5,8 +5,8 @@
 class Ssostart < Formula
   desc "Aws sso login helper with aws-envs awareness"
   homepage "https://github.com/easytocloud/ssostart"
-  url "https://github.com/easytocloud/ssostart/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "ad833724de51dcc8d2e962eb8370b9710c06a80d20ba1dd345beb7f5d54dfb8e"
+  url "https://github.com/easytocloud/ssostart/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "20a24e24f4ab00a57564d19232a9b386d419e6db1110ba56c1f09362136dd14c"
 
   def install
     bin.install "distribution/bin/ssostart"
