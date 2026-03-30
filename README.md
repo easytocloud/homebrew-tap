@@ -32,6 +32,7 @@ You can now install the different formulae, starting with
 | [layout-uv](https://github.com/easytocloud/layout_uv)                                     | Direnv layout extension                                                          | `brew install layout-uv`                   |
 | [privpage](https://github.com/easytocloud/privpage)                                       | Aws pager masking privacy sensitive information                                  | `brew install privpage`                    |
 | [sso-tools](https://github.com/easytocloud/sso-tools)                                     | Sso tools for use in aws ec2 instances                                           | `brew install sso-tools`                   |
+| [ssostart](https://github.com/easytocloud/ssostart)                                       | Aws sso login helper with aws-envs awareness                                     | `brew install ssostart`                    |
 | [zsh-functions](https://github.com/easytocloud/zsh_functions)                             | Common zsh functions                                                             | `brew install zsh-functions`               |
 <!-- project_table_end -->
 
