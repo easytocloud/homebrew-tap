@@ -5,8 +5,8 @@
 class CodecommitUtils < Formula
   desc "Brings gh-style shorthand to aws codecommit repositories and pull requests"
   homepage "https://github.com/easytocloud/codecommit-utils"
-  url "https://github.com/easytocloud/codecommit-utils/archive/refs/tags/v0.7.0.tar.gz"
-  sha256 "0ebf3a1f52e54ad2319ffbd17692d89e072018c827cb17f266e1bbfa6595e1c5"
+  url "https://github.com/easytocloud/codecommit-utils/archive/refs/tags/v0.7.1.tar.gz"
+  sha256 "f197c978eb2f51333ddfdbfe66ed2fe7a045e234316db6a73a6ef49b2ec4c7c5"
   license "MIT"
 
   def install
@@ -14,6 +14,10 @@ class CodecommitUtils < Formula
 bin.install "distribution/bin/ccclone"
 bin.install "distribution/bin/cclist"
 bin.install "distribution/bin/ccinit"
+man1.install "distribution/man/cch.1"
+man1.install "distribution/man/ccclone.1"
+man1.install "distribution/man/cclist.1"
+man1.install "distribution/man/ccinit.1"
 bash_completion.install "distribution/completions/cch-completion.bash"
 bash_completion.install "distribution/completions/ccclone-completion.bash"
 bash_completion.install "distribution/completions/cclist-completion.bash"
@@ -25,5 +29,6 @@ zsh_completion.install "distribution/completions/_cclist"
   test do
     assert_match "cch #{version}", shell_output("#{bin}/cch --version")
 assert_match "Work with AWS CodeCommit repositories", shell_output("#{bin}/cch --help")
+assert_predicate man1/"cch.1", :exist?
   end
 end
