@@ -5,8 +5,8 @@
 class CodecommitUtils < Formula
   desc "Brings gh-style shorthand to aws codecommit repositories and pull requests"
   homepage "https://github.com/easytocloud/codecommit-utils"
-  url "https://github.com/easytocloud/codecommit-utils/archive/refs/tags/v0.7.2.tar.gz"
-  sha256 "73e8d1a8e736010126d65863c0408b1abc3440e52856d0ffda68b463ac71c857"
+  url "https://github.com/easytocloud/codecommit-utils/archive/refs/tags/v0.8.1.tar.gz"
+  sha256 "91aa3addb443433b04b87ab5ec80d02f169e0638bb7dd775923bcbcc11d30b5a"
   license "MIT"
 
   def install
