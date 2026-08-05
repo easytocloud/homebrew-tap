@@ -5,8 +5,8 @@
 class MacLetterhead < Formula
   desc "Letterhead pdf as digital stationery: prints markdown without overprinting heade"
   homepage "https://github.com/easytocloud/Mac-letterhead"
-  url "https://github.com/easytocloud/Mac-letterhead/archive/refs/tags/v0.20.1.tar.gz"
-  sha256 "eefae5699d0633d7ff525b9c78d262403f88cef58fb7ab12f632bfd485b5628b"
+  url "https://github.com/easytocloud/Mac-letterhead/archive/refs/tags/v0.21.0.tar.gz"
+  sha256 "894378d7c1a08df3a67f1916a3b4acfdfe28a06474b3d2c415a13384fab1876f"
   license "MIT"
 
   depends_on "uv"
