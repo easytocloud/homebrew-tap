@@ -1,20 +1,27 @@
-# homebrew-tap
+# 🍺 easytocloud/tap
 
-Tap into AWS tools by easytocloud.
+![Homebrew tap](https://img.shields.io/badge/Homebrew-tap-fbb040?logo=homebrew&logoColor=white)
+![License](https://img.shields.io/github/license/easytocloud/homebrew-tap?color=blue)
+![Last commit](https://img.shields.io/github/last-commit/easytocloud/homebrew-tap)
+![Formulae](https://img.shields.io/github/directory-file-count/easytocloud/homebrew-tap/Formula?label=formulae&color=green)
 
-Homebrew is a package manager for Mac OS and Linux. 
-You can add taps as sources for package installations.
+Homebrew tap for **easytocloud** tools and utilities — AWS helpers, Python-tool wrappers, and general-purpose macOS utilities.
 
-# Add our tap
-To add our product repository as a source for your brew installations, please type:
+## 🚀 Add the tap
 
-``$ brew tap easytocloud/tap``
+```bash
+brew tap easytocloud/tap
+```
 
-You can now install the different formulae, starting with
+## 📦 Install any of the formulae below
 
-``$ brew install aws-profile-organizer``
+```bash
+brew install <name>
+```
 
-# Formulae
+For example, `brew install mac-letterhead` for the [Markdown-on-letterhead PDF tool](https://github.com/easytocloud/Mac-letterhead), or `brew install aws-profile-organizer` to tidy your AWS profiles.
+
+## 📋 Formulae
 
 <!-- project_table_start -->
 | Project                                                                                   | Description                                                                      | Install                                    |
@@ -37,4 +44,4 @@ You can now install the different formulae, starting with
 | [zsh-functions](https://github.com/easytocloud/zsh_functions)                             | Common zsh functions                                                             | `brew install zsh-functions`               |
 <!-- project_table_end -->
 
-Enjoy!
+Enjoy! 🎉
