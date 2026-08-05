@@ -19,6 +19,7 @@ You can now install the different formulae, starting with
 <!-- project_table_start -->
 | Project                                                                                   | Description                                                                      | Install                                    |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
+| [mac-letterhead](https://github.com/easytocloud/Mac-letterhead)                           | Letterhead pdf as digital stationery: prints markdown without overprinting heade | `brew install mac-letterhead`              |
 | [akskrotate](https://github.com/easytocloud/akskrotate)                                   | Rotate your aws access key / secret key with confidence                          | `brew install akskrotate`                  |
 | [aws-profile-organizer](https://github.com/easytocloud/aws-profile-organizer)             | Organize your aws profile                                                        | `brew install aws-profile-organizer`       |
 | [aws-utils](https://github.com/easytocloud/aws-utils)                                     | Collection of aws cli utilities by easytocloud                                   | `brew install aws-utils`                   |
